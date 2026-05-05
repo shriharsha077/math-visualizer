@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Visualizer</title>
+</head>
+<body>
+    <h1>Math Equation Visualizer</h1>
+    <form id="equationForm">
+        <label for="equationInput">Enter a math equation:</label>
+        <input type="text" id="equationInput" name="equation" required>
+        <button type="submit">Visualize</button>
+    </form>
+    <div id="graphDisplayArea">
+        <!-- Graph will be displayed here -->
+    </div>
+    <script>
+        // JavaScript for visualizing the equation will go here
+        document.getElementById('equationForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const equation = document.getElementById('equationInput').value;
+            // Logic to visualize the equation
+        });
+    </script>
+</body>
+</html>
